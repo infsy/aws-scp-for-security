@@ -1,0 +1,13 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "DenyChangeS3PublicAccess",
+            "Action": [
+                "s3:PutAccountPublicAccessBlock"
+            ],
+            "Resource": "*",
+            "Effect": "Deny"
+        }
+    ]
+}
